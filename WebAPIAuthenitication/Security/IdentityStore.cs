@@ -11,7 +11,7 @@ namespace WebAPIAuthenitication.Security
 
         public static bool IsValidUser(User user)
         {
-            if (users.ContainsKey(user.UserId))
+            if (!users.ContainsKey(user.UserId))
                 return false;
 
             return users[user.UserId] == user.Password;

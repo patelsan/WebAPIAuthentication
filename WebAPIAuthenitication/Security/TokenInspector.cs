@@ -27,7 +27,7 @@ namespace WebAPIAuthenitication.Security
 
                     if (!isValidUserId || !requestIPMatchesTokenIP)
                     {
-                        HttpResponseMessage reply = request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Invalid token.");
+                        HttpResponseMessage reply = request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Invalid indentity or client machine.");
                         return Task.FromResult(reply);
                     }
                 }

@@ -26,7 +26,7 @@ namespace WebAPIAuthenitication.Security
 
         public override string ToString()
         {
-            return String.Format("UserId:{0};IP:{1}", this.UserId, this.IP);
+            return String.Format("UserId={0};IP={1}", this.UserId, this.IP);
         }
 
         public static Token Decrypt(string encryptedToken)

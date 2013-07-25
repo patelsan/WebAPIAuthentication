@@ -16,7 +16,7 @@ namespace WebAPIAuthenitication.Helpers
         public static Dictionary<string, string> ToDictionary(this string keyValue)
         {
             return keyValue.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries)
-                          .Select(part => part.Split(':'))
+                          .Select(part => part.Split('='))
                           .ToDictionary(split => split[0], split => split[1]);    
         }
     }
