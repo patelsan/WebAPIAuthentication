@@ -9,7 +9,11 @@ namespace WebAPIAuthenitication.Controllers
     {
         public IList<string> Get()
         {
-            return new List<string>() { "FitBit" };
+            return new List<string>() { "Atomos Ninja 2 Video Recorder", 
+                                        "Funko Creature from the Black Lagoon Funko Force", 
+                                        "Teva Men's Dozer III Closed Toe Sandal",
+                                        "ThinkGeek: Star Trek Command Tee",
+                                        "ASUS Professional Graphics Monitor" };
         }
     }
 }
